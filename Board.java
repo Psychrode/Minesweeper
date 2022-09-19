@@ -18,7 +18,7 @@ public class Board extends JPanel{
   board_mines = mines;
   game_statusbar = statusbar;
   
-  // do not edit the two lines below this! 
+  // set parameters for board size
   setPreferredSize(new Dimension(Configuration.BOARD_WIDTH, Configuration.BOARD_HEIGHT));
   addMouseListener(new MouseReader(this));
  }
@@ -26,7 +26,7 @@ public class Board extends JPanel{
  @Override
  public void paintComponent(Graphics g)
  {
-  // Here, you must invoke method draw(g) of the Minefield object
+  // drawing board here
 	 m.draw(g);
  }
  
@@ -89,7 +89,7 @@ public class Board extends JPanel{
 		 
 	 }
 
-   //Do not remove the invocation of repaint() below
+  
   
    repaint();
  }
